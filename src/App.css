@@ -1,38 +1,160 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
-
+body {
+	background-color: rgb(165 202 225);
+	font-family: sans-serif;
+}
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.home {
+	margin-top: 5rem;
+	display: flex;
+	justify-content: center;
+	background-color: rgb(111 174 218);
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.leftSide {
+	width: 65%;
+}
+.rightSide {
+	width: 35%;
+	background-color: rgb(65 106 138);
+}
+.inpGroup {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+.locationInp {
+	color: rgb(112 153 183);
+	outline: none;
+	background: none;
+	border: none;
+	width: 65%;
+	padding-bottom: 6px;
+	font-size: smaller;
+	border-bottom: 1px solid rgb(112 153 183);
+}
+.searchBtn {
+	border: none;
+	background: rgb(169 206 225);
+	cursor: pointer;
+}
+.locationInp::placeholder {
+	color: rgb(112 153 183);
+}
+
+.img {
+	background-color: rgb(169 206 225);
+	padding: 20px;
+}
+
+.headGroup {
+	margin-left: 2.5em;
+}
+
+li {
+	list-style: none;
+}
+
+li h5 {
+	color: rgb(112 153 183);
+	text-align: start;
+}
+
+.line {
+	border-bottom: 1px solid rgb(112 153 183);
+	margin-right: 2.5em;
+}
+.footGroup > h5 {
+	color: white;
+	font-size: 15px;
+}
+
+.footGroup {
+	margin-left: 2.5em;
+	margin-right: 2.5em;
+	text-align: start;
+}
+
+.detailGroup {
+	display: flex;
+	justify-content: space-between;
+}
+.detailGroup h5 {
+	color: rgb(146 173 192);
+}
+.detailGroup h6 {
+	color: white;
+}
+/* .leftSide {
+	position: relative;
+} */
+
+.gradusGroup {
+	position: absolute;
+	top: 385px;
+	display: flex;
+	align-items: end;
+	width: 35%;
+	left: 15%;
+	justify-content: space-between;
+}
+
+.gradus {
+	font-size: 100px;
+	font-weight: 400;
+	margin: 0;
+	color: white;
+}
+
+.city {
+	font-size: 21px;
+	font-weight: 400;
+	margin: 0;
+	color: white;
+}
+.date {
+	font-weight: 400;
+	color: white;
+}
+.cloudity {
+	font-weight: 400;
+	color: white;
 }
